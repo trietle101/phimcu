@@ -1,0 +1,151 @@
+:root {
+    --primary-color: black;
+    --secondary-color: #2e9cca;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 6.25%;
+    background-color: #1b1b1b;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: "JetBrains Mono", sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    font-size: 14rem;
+}
+
+header {
+    background: var(--primary-color);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
+        url("../image/breakfast/background.jpg");
+    height: 90vh;
+    width: 100%;
+}
+
+header .container {
+    margin: 0 auto;
+}
+nav {
+    position: fixed;
+}
+
+.header-nav {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0rem 60rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-logo img {
+    height: 31rem;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 240rem;
+}
+.nav__list,
+.nav__icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 30rem;
+    padding: 0rem;
+    list-style: none;
+}
+
+.nav__link,
+.nav__links {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    font-size: 15rem;
+}
+
+.nav__link.active {
+    color: rgba(109, 109, 110, 1);
+}
+
+.nav__link:hover,
+.nav__links:hover {
+    color: rgba(109, 109, 110, 1);
+}
+
+.nav__info {
+    max-width: 500rem;
+    position: absolute;
+    top: 200rem;
+    left: 130rem;
+    color: #fff;
+    z-index: 1;
+}
+.nav__info h1 {
+    font-size: 3.5vw;
+}
+.nav__info p {
+    font-size: 1vw;
+}
+.nav__button {
+    display: flex;
+    margin-top: 30px;
+}
+.nav__button a {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 30rem;
+}
+.nav__button a:first-child {
+    height: 57rem;
+    width: 155rem;
+    background-color: rgba(255, 255, 255, 0.75);
+    color: black;
+}
+.nav__button a:last-child {
+    height: 57rem;
+    width: 215rem;
+    background-color: rgba(109, 109, 110, 0.7);
+    color: white;
+    margin-left: 20rem;
+}
+.nav__button a p {
+    padding-left: 10px;
+    font-size: 20rem;
+}
+
+main {
+    padding: 0 60rem;
+}
+main section p {
+    color: white;
+    font-size: 30rem;
+    margin-bottom: 15rem;
+}
+main section .cover {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 20rem;
+}
+main section .cover img {
+    border-radius: 15rem;
+}
