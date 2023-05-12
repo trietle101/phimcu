@@ -22,7 +22,6 @@ body {
 }
 
 header {
-    background: var(--primary-color);
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
         url("../image/breakfast/background.jpg");
     height: 90vh;
@@ -30,16 +29,27 @@ header {
 }
 
 header .container {
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
 }
+
 nav {
     position: fixed;
+    width: 100%;
+    padding: 0rem 60rem;
+    box-sizing: border-box;
+    z-index: 1000;
+    transition: background 0.5s ease-in-out;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+.nav-scrolled {
+    background: #1b1b1b;
 }
 
 .header-nav {
-    max-width: 100%;
+    /* width: 100%; */
     margin: 0 auto;
-    padding: 0rem 60rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -52,6 +62,7 @@ nav {
 
 .header-logo img {
     height: 31rem;
+    padding-right: 15rem;
 }
 
 .header-menu {
@@ -77,7 +88,7 @@ nav {
     color: #fff;
     text-decoration: none;
     transition: 0.3s ease-in-out;
-    font-size: 15rem;
+    font-size: 0.8vw;
 }
 
 .nav__link.active {
@@ -116,14 +127,14 @@ nav {
     font-size: 30rem;
 }
 .nav__button a:first-child {
-    height: 57rem;
-    width: 155rem;
+    max-height: 100%;
+    width: 27%;
     background-color: rgba(255, 255, 255, 0.75);
     color: black;
 }
 .nav__button a:last-child {
-    height: 57rem;
-    width: 215rem;
+    height: 100%;
+    width: 40%;
     background-color: rgba(109, 109, 110, 0.7);
     color: white;
     margin-left: 20rem;
