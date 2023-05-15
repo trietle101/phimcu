@@ -129,8 +129,12 @@ nav {
 .nav__button a:first-child {
     max-height: 100%;
     width: 27%;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.7);
     color: black;
+}
+.nav__button a:first-child:hover {
+    background-color: rgba(255, 255, 255, 1);
+    /* transition: background-color 1000ms linear; */
 }
 .nav__button a:last-child {
     height: 100%;
@@ -138,6 +142,10 @@ nav {
     background-color: rgba(109, 109, 110, 0.7);
     color: white;
     margin-left: 20rem;
+}
+.nav__button a:last-child:hover {
+    background-color: rgba(109, 109, 110, 1);
+    /* transition: background-color 1000ms linear; */
 }
 .nav__button a p {
     padding-left: 10px;
@@ -159,4 +167,8 @@ main section .cover {
 }
 main section .cover img {
     border-radius: 15rem;
+    transition: transform 0.2s;
+}
+main section .cover img:hover {
+    transform: scale(1.1);
 }
