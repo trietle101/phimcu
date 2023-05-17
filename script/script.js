@@ -17,3 +17,21 @@ const play = function () {
     video.controls = true;
     button.style.display = "none";
 };
+
+var scrollAmount = 0;
+const slider = document.querySelector(".cast__card");
+const next = function () {
+    slider.scrollTo({
+        top: 0,
+        left: (scrollAmount += 500),
+        behavior: "smooth",
+    });
+};
+const prev = function () {
+    slider.scrollTo({
+        top: 0,
+        left: (scrollAmount -= 500),
+        behavior: "smooth",
+    });
+    if (scrollAmount < 0) scrollAmount = 0;
+};
