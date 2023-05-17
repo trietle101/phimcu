@@ -9,3 +9,11 @@ window.onscroll = function () {
         nav.classList.remove("nav-scrolled");
     }
 };
+
+const play = function () {
+    const video = document.querySelector("video");
+    const button = document.querySelector("button");
+    video.paused ? video.play() : video.pause();
+    video.controls = true;
+    button.style.display = "none";
+};

@@ -21,13 +21,6 @@ body {
     font-size: 14rem;
 }
 
-header {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
-        url("../image/breakfast/background.jpg");
-    height: 90vh;
-    width: 100%;
-}
-
 header .container {
     margin: 0;
     padding: 0;
@@ -100,84 +93,15 @@ nav {
     color: rgba(109, 109, 110, 1);
 }
 
-.nav__info {
-    max-width: 500rem;
-    position: absolute;
-    top: 200rem;
-    left: 130rem;
-    color: #fff;
-    z-index: 1;
-}
-.nav__info h1 {
-    font-size: 3.5vw;
-}
-.nav__info p {
-    font-size: 1vw;
-}
-.nav__button {
-    display: flex;
-    margin-top: 30px;
-}
-.nav__button a {
-    display: flex;
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-    font-size: 30rem;
-}
-.nav__button a:first-child {
-    max-height: 100%;
-    width: 27%;
-    background-color: rgba(255, 255, 255, 0.7);
-    color: black;
-}
-.nav__button a:first-child:hover {
-    background-color: rgba(255, 255, 255, 1);
-    /* transition: background-color 1000ms linear; */
-}
-.nav__button a:last-child {
-    height: 100%;
-    width: 40%;
-    background-color: rgba(109, 109, 110, 0.7);
-    color: white;
-    margin-left: 20rem;
-}
-.nav__button a:last-child:hover {
-    background-color: rgba(109, 109, 110, 1);
-    /* transition: background-color 1000ms linear; */
-}
-.nav__button a p {
-    padding-left: 10px;
-    font-size: 20rem;
-}
-
 main {
     padding: 0 60rem;
-}
-main section p {
-    color: white;
-    font-size: 30rem;
-    margin-bottom: 15rem;
-}
-main section .cover {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    gap: 20rem;
-}
-main section .cover img {
-    border-radius: 15rem;
-    transition: transform 0.2s;
-}
-main section .cover img:hover {
-    transform: scale(1.1);
 }
 
 /*                     --------------details------------------          */
 
 .details {
     display: flex;
-    padding-top: 200rem;
+    padding-top: 150rem;
     justify-content: space-between;
     align-items: center;
 }
@@ -185,7 +109,7 @@ main section .cover img:hover {
 .details__info {
     display: flex;
 
-    max-width: 60%;
+    max-width: 50%;
 }
 .details__info img {
     max-height: 350rem;
@@ -197,7 +121,7 @@ main section .cover img:hover {
 }
 .details__gernes a {
     text-decoration: none;
-    color: #7e7e7e;
+    color: #cecece;
     background-color: #0e0e0e;
     padding: 5rem 12rem;
     border-radius: 20rem;
@@ -217,6 +141,7 @@ main section .cover img:hover {
     margin-bottom: 0rem;
     margin-right: 5rem;
     font-size: 15rem;
+    color: #ffffff;
 }
 .details__rating {
     display: flex;
@@ -232,6 +157,7 @@ main section .cover img:hover {
 .details__rating p {
     margin-top: 14rem;
     font-size: 17rem;
+    color: white;
 }
 .details__add {
     display: flex;
@@ -239,24 +165,26 @@ main section .cover img:hover {
 .details__add i {
     margin-top: 25rem;
     padding: 7rem 12rem;
-    background-color: beige;
+    background-color: #ffffff;
     line-height: 100%;
     border-radius: 7rem;
     display: inline-block;
+    cursor: pointer;
 }
 .details__add p {
     margin-top: 32rem;
     margin-left: 20rem;
     font-size: 20rem;
+    color: white;
 }
 .details__desc > p {
     font-size: 15rem;
     color: #8b8b8b;
 }
-.details__trailer{
+.details__trailer {
     position: relative;
 }
-.details__trailer button{
+.details__trailer button {
     position: absolute;
     top: 50%;
     left: 45%;
@@ -265,4 +193,90 @@ main section .cover img:hover {
     border: none;
     border-radius: 8rem;
     cursor: pointer;
+}
+
+.cast__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cast__header > p {
+    color: white;
+    font-size: 30rem;
+    margin-bottom: 15rem;
+}
+.cast__header .button {
+    padding-top: 17rem;
+}
+.cast__header .button button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0 10rem;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+.cast__header .button i {
+    line-height: 100%;
+    border-radius: 7rem;
+    display: inline-block;
+    cursor: pointer;
+}
+.cast .cast__card {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 33%;
+    gap: 0rem;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: inline mandatory;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.cast .cast__card::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.cast .cast__card {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.cast .cast__item {
+    position: relative;
+    margin: 0;
+}
+.cast .cast__item img {
+    border-radius: 15rem;
+    transition: transform 0.2s;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    margin: 0;
+    scroll-snap-align: start;
+}
+.cast .cast__card img:hover {
+    transform: scale(1.1);
+}
+.cast__card .overlay {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+.cast__item .name {
+    font-size: 20rem;
+    position: absolute;
+    color: rgb(173, 173, 173);
+    top: 75%;
+    left: 3%;
+}
+.cast__item .role {
+    font-size: 13rem;
+    position: absolute;
+    color: #fff;
+    top: 86%;
+    left: 3%;
 }

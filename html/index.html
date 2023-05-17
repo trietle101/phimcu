@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Phimcu</title>
-        <link rel="stylesheet" href="../style/style.css" />
+        <link rel="stylesheet" href="../style/substyle.css" />
         <link rel="icon" type="image/x-icon" href="../favicon.png" />
         <script
             src="https://kit.fontawesome.com/08ee78edd1.js"
@@ -61,84 +61,125 @@
                         </ul>
                     </div>
                 </nav>
-                <div class="nav__info">
-                    <h1>Breakfast at Tiffany's</h1>
-                    <p>
-                        A young New York socialite becomes interested in a young
-                        man who has moved into her apartment building, but her
-                        past threatens to get in the way.
-                    </p>
-                    <div class="nav__button">
-                        <a href="#">
-                            <i class="fa-solid fa-play"></i>
-                            <p>Play</p>
-                        </a>
-                        <a href="#">
-                            <i class="fa-solid fa-circle-info"></i>
-                            <p>More info</p>
-                        </a>
-                    </div>
-                </div>
             </div>
         </header>
         <main>
-            <section class="top">
-                <p>All time favorites</p>
-                <div class="cover">
-                    <img src="image/Joker.jpg" />
-                    <img src="image/Seven.jpg" />
-                    <img src="image/Zodiac.jpg" />
-                    <img src="image/Titanic.jpg" />
-                    <img src="image/Shutter Island.jpg" />
-                    <img src="image/Fight Club.jpg" />
+            <section class="details">
+                <div class="details__info">
+                    <img
+                        src="../image/breakfast/poster.jpg"
+                        alt=""
+                        class="poster"
+                    />
+                    <div class="details__desc">
+                        <div class="details__gernes">
+                            <a href="">Comedy</a>
+                            <a href="">Drama</a>
+                            <a href="">Romance</a>
+                        </div>
+                        <div class="details__release">
+                            <p>1961</p>
+                            <p>&#183;</p>
+                            <p>Approved</p>
+                            <p>&#183;</p>
+                            <p>1h 55m</p>
+                        </div>
+                        <h1>Breakfast at Tiffany's</h1>
+                        <div class="details__rating">
+                            <img src="../image/imdb.png" alt="" srcset="" />
+                            <p>7.6</p>
+                        </div>
+                        <div class="details__add">
+                            <span
+                                ><i
+                                    class="fa-solid fa-bookmark fa-xl"
+                                    style="color: #000000"
+                                ></i
+                            ></span>
+                            <p>Save to favorites</p>
+                        </div>
+                        <p>
+                            A young New York socialite becomes interested in a
+                            young man who has moved into her apartment building,
+                            but her past threatens to get in the way.
+                        </p>
+                    </div>
+                </div>
+                <div class="details__trailer">
+                    <video width="320" height="240" preload="metadata">
+                        <source
+                            src="../image/breakfast/trailer.mp4#t=10.5"
+                            type="video/mp4"
+                        />
+                    </video>
+                    <button onclick="play()">
+                        <i
+                            class="fa-solid fa-play fa-xl"
+                            style="color: #000000"
+                        ></i>
+                    </button>
                 </div>
             </section>
-            <section class="top">
-                <p>Popular</p>
-                <div class="cover">
-                    <img src="image/The Social Network.jpg" />
-                    <img src="image/The Silence of the Lambs.jpg" />
-                    <img src="image/The King's Speech.jpg" />
-                    <img src="image/Prisoners.jpg" />
-                    <img src="image/Nightcrawler.jpg" />
-                    <img src="image/La La Land.jpg" />
+            <section class="cast">
+                <div class="cast__header">
+                    <p>Cast</p>
+                    <div class="button">
+                        <button><i class="fa-solid fa-less-than" style="color: #ffffff;"></i></button>
+                        <button><i class="fa-solid fa-greater-than" style="color: #ffffff;"></i></button>
+                    </div>
                 </div>
-            </section>
-            <section class="top">
-                <p>All time favorites</p>
-                <div class="cover">
-                    <img src="image/Joker.jpg" />
-                    <img src="image/Seven.jpg" />
-                    <img src="image/Zodiac.jpg" />
-                    <img src="image/Titanic.jpg" />
-                    <img src="image/Shutter Island.jpg" />
-                    <img src="image/Fight Club.jpg" />
-                </div>
-            </section>
-            <section class="top">
-                <p>All time favorites</p>
-                <div class="cover">
-                    <img src="image/Joker.jpg" />
-                    <img src="image/Seven.jpg" />
-                    <img src="image/Zodiac.jpg" />
-                    <img src="image/Titanic.jpg" />
-                    <img src="image/Shutter Island.jpg" />
-                    <img src="image/Fight Club.jpg" />
-                </div>
-            </section>
-            <section class="top">
-                <p>All time favorites</p>
-                <div class="cover">
-                    <img src="image/Joker.jpg" />
-                    <img src="image/Seven.jpg" />
-                    <img src="image/Zodiac.jpg" />
-                    <img src="image/Titanic.jpg" />
-                    <img src="image/Shutter Island.jpg" />
-                    <img src="image/Fight Club.jpg" />
+                <div class="cast__card">
+                    <div class="cast__item">
+                        <img src="../image/breakfast/cast/1.jpg" />
+                        <div class="overlay"></div>
+                        <p class="name">Audrey Hepburn</p>
+                        <p class="role">Holly Golightly</p>
+                    </div>
+                    <div class="cast__item">
+                        <img src="../image/breakfast/cast/2.jpg" />
+                        <div class="overlay"></div>
+                        <p class="name">George Peppard</p>
+                        <p class="role">Paul Varjak</p>
+                    </div>
+                    <div class="cast__item">
+                        <img src="../image/breakfast/cast/3.jpg" />
+                        <div class="overlay"></div>
+                        <p class="name">Patricia Neal</p>
+                        <p class="role">2E Failenson</p>
+                    </div>
+                    <div class="cast__item">
+                        <img src="../image/breakfast/cast/4.jpg" />
+                        <div class="overlay"></div>
+                        <p class="name">Buddy Ebsen</p>
+                        <p class="role">Doc Golightly</p>
+                    </div>
+                    <div class="cast__item">
+                        <img src="../image/breakfast/cast/5.jpg" />
+                        <div class="overlay"></div>
+                        <p class="name">Martin Balsam</p>
+                        <p class="role">O.J. Berman</p>
+                    </div>
+                    <div class="cast__item">
+                        <img src="../image/breakfast/cast/6.jpg" />
+                        <div class="overlay"></div>
+                        <p class="name">José Vilallonga</p>
+                        <p class="role">José Pereira</p>
+                    </div>
+                    <div class="cast__item">
+                        <img src="../image/breakfast/cast/7.jpg" />
+                        <div class="overlay"></div>
+                        <p class="name">John McGiver</p>
+                        <p class="role">Tiffany's Salesman</p>
+                    </div>
+                    <div class="cast__item">
+                        <img src="../image/breakfast/cast/8.jpg" />
+                        <div class="overlay"></div>
+                        <p class="name">Dorothy Whitney</p>
+                        <p class="role">Mag Wildwood</p>
+                    </div>
                 </div>
             </section>
         </main>
-
         <script src="../script/script.js"></script>
     </body>
 </html>
