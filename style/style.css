@@ -253,10 +253,10 @@ main section .cover img:hover {
     font-size: 15rem;
     color: #8b8b8b;
 }
-.details__trailer{
+.details__trailer {
     position: relative;
 }
-.details__trailer button{
+.details__trailer button {
     position: absolute;
     top: 50%;
     left: 45%;
