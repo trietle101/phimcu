@@ -325,7 +325,7 @@ main section .cover img:hover {
     margin-top: 10px;
 }
 .footer-right {
-    width: calc(35% - 250px);
+    width: calc(35% - 150px);
 }
 .footer-right-title {
     font-weight: 400;
