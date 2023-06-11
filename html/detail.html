@@ -12,7 +12,7 @@
             crossorigin="anonymous"
         ></script>
     </head>
-    <body>
+    <body onload="getMovieDetails(1)">
         <header>
             <div class="container">
                 <nav class="">
@@ -67,50 +67,7 @@
         </header>
         <main>
             <section class="details">
-                <div class="details__info">
-                    <img
-                        src="../image/breakfast/poster.jpg"
-                        alt=""
-                        class="poster"
-                    />
-                    <div class="details__desc">
-                        <div class="details__gernes">
-                            <a href="">Comedy</a>
-                            <a href="">Drama</a>
-                            <a href="">Romance</a>
-                        </div>
-                        <div class="details__release">
-                            <p>1961</p>
-                            <p>&#183;</p>
-                            <p>Approved</p>
-                            <p>&#183;</p>
-                            <p>1h 55m</p>
-                        </div>
-                        <h1>Breakfast at Tiffany's</h1>
-                        <div class="details__rating">
-                            <img src="../image/imdb.png" alt="" srcset="" />
-                            <p>7.6</p>
-                        </div>
-                        <div class="details__add">
-                            <span
-                                ><i
-                                    class="fa-solid fa-bookmark fa-xl"
-                                    style="color: #000000"
-                                ></i
-                            ></span>
-                            <p>Save to favorites</p>
-                        </div>
-                        <p>
-                            A young New York socialite becomes interested in a
-                            young man who has moved into her apartment building,
-                            but her past threatens to get in the way.
-                        </p>
-                        <button>
-                            <i class="fa-solid fa-play fa-2xl"></i>
-                            <p>Play now</p>
-                        </button>
-                    </div>
-                </div>
+                <div class="details__info"></div>
                 <div class="details__trailer">
                     <video width="320" height="240" preload="metadata">
                         <source
@@ -130,107 +87,22 @@
                 <div class="cast__header">
                     <p>Cast</p>
                     <div class="button">
-                        <button>
+                        <button class="btn__prev">
                             <i
                                 class="fa-solid fa-less-than"
                                 style="color: #ffffff"
-                                onclick="prev()"
                             ></i>
                         </button>
-                        <button>
+                        <button" class="btn__next">
                             <i
                                 class="fa-solid fa-greater-than"
                                 style="color: #ffffff"
-                                onclick="next()"
                             ></i>
                         </button>
                     </div>
                 </div>
                 <div class="cast__card">
-                    <div class="cast__item">
-                        <img src="../image/breakfast/cast/1.jpg" />
-                        <div class="overlay"></div>
-                        <p class="name">Audrey Hepburn</p>
-                        <p class="role">Holly Golightly</p>
-                    </div>
-                    <div class="cast__item">
-                        <img src="../image/breakfast/cast/2.jpg" />
-                        <div class="overlay"></div>
-                        <p class="name">George Peppard</p>
-                        <p class="role">Paul Varjak</p>
-                    </div>
-                    <div class="cast__item">
-                        <img src="../image/breakfast/cast/3.jpg" />
-                        <div class="overlay"></div>
-                        <p class="name">Patricia Neal</p>
-                        <p class="role">2E Failenson</p>
-                    </div>
-                    <div class="cast__item">
-                        <img src="../image/breakfast/cast/4.jpg" />
-                        <div class="overlay"></div>
-                        <p class="name">Buddy Ebsen</p>
-                        <p class="role">Doc Golightly</p>
-                    </div>
-                    <div class="cast__item">
-                        <img src="../image/breakfast/cast/5.jpg" />
-                        <div class="overlay"></div>
-                        <p class="name">Martin Balsam</p>
-                        <p class="role">O.J. Berman</p>
-                    </div>
-                    <div class="cast__item">
-                        <img src="../image/breakfast/cast/6.jpg" />
-                        <div class="overlay"></div>
-                        <p class="name">José Vilallonga</p>
-                        <p class="role">José Pereira</p>
-                    </div>
-                    <div class="cast__item">
-                        <img src="../image/breakfast/cast/7.jpg" />
-                        <div class="overlay"></div>
-                        <p class="name">John McGiver</p>
-                        <p class="role">Tiffany's Salesman</p>
-                    </div>
-                    <div class="cast__item">
-                        <img src="../image/breakfast/cast/8.jpg" />
-                        <div class="overlay"></div>
-                        <p class="name">Dorothy Whitney</p>
-                        <p class="role">Mag Wildwood</p>
-                    </div>
-                    <div class="cast__item">
-                        <img src="../image/breakfast/cast/9.jpg" />
-                        <div class="overlay"></div>
-                        <p class="name">Stanley Adams</p>
-                        <p class="role">Rusty Trawler</p>
-                    </div>
-                    <div class="cast__item">
-                        <img src="../image/breakfast/cast/10.jpg" />
-                        <div class="overlay"></div>
-                        <p class="name">Elvia Allman</p>
-                        <p class="role">Librarian</p>
-                    </div>
-                    <div class="cast__item">
-                        <img src="../image/breakfast/cast/11.jpg" />
-                        <div class="overlay"></div>
-                        <p class="name">Alan Reed</p>
-                        <p class="role">Sally Tomato</p>
-                    </div>
-                    <div class="cast__item">
-                        <img src="../image/breakfast/cast/911.jpg" />
-                        <div class="overlay"></div>
-                        <p class="name">Holly Tran</p>
-                        <p class="role">Holly Gosweety</p>
-                    </div>
-                    <div class="cast__item">
-                        <img src="../image/breakfast/cast/12.jpg" />
-                        <div class="overlay"></div>
-                        <p class="name">Beverly Powers</p>
-                        <p class="role">Nightclub Stripper</p>
-                    </div>
-                    <div class="cast__item">
-                        <img src="../image/breakfast/cast/13.jpg" />
-                        <div class="overlay"></div>
-                        <p class="name">Claude Stroud</p>
-                        <p class="role">Sid Arbuck</p>
-                    </div>
+                    
                 </div>
             </section>
             <section class="cast">
@@ -382,6 +254,7 @@
                 </div>
             </div>
         </footer>
+        <script src="../script/src.js"></script>
         <script src="../script/script.js"></script>
     </body>
 </html>

@@ -12,7 +12,7 @@
             crossorigin="anonymous"
         ></script>
     </head>
-    <body>
+    <body onload="getMovie(1); getMoviePop()">
         <header>
             <div class="container">
                 <nav class="">
@@ -54,7 +54,7 @@
                                 ></a>
                             </li>
                             <li class="nav__item">
-                                <a href="./login.php" class="nav__links"
+                                <a href="../html/login.html" class="nav__links user"
                                     ><i class="fa-solid fa-user fa-lg"></i
                                 ></a>
                             </li>
@@ -67,39 +67,6 @@
             <section class="top">
                 <p>Popular</p>
                 <div class="cover"></div>
-            </section>
-            <section class="top">
-                <p>All time favorites</p>
-                <div class="cover">
-                    <img src="image/Joker.jpg" />
-                    <img src="image/Seven.jpg" />
-                    <img src="image/Zodiac.jpg" />
-                    <img src="image/Titanic.jpg" />
-                    <img src="image/Shutter Island.jpg" />
-                    <img src="image/Fight Club.jpg" />
-                </div>
-            </section>
-            <section class="top">
-                <p>All time favorites</p>
-                <div class="cover">
-                    <img src="image/Joker.jpg" />
-                    <img src="image/Seven.jpg" />
-                    <img src="image/Zodiac.jpg" />
-                    <img src="image/Titanic.jpg" />
-                    <img src="image/Shutter Island.jpg" />
-                    <img src="image/Fight Club.jpg" />
-                </div>
-            </section>
-            <section class="top">
-                <p>All time favorites</p>
-                <div class="cover">
-                    <img src="image/Joker.jpg" />
-                    <img src="image/Seven.jpg" />
-                    <img src="image/Zodiac.jpg" />
-                    <img src="image/Titanic.jpg" />
-                    <img src="image/Shutter Island.jpg" />
-                    <img src="image/Fight Club.jpg" />
-                </div>
             </section>
         </main>
         <footer class="footer">
@@ -188,8 +155,8 @@
                 </div>
             </div>
         </footer>
-        <script src="./node_modules/axios/dist/browser/axios.cjs"></script>
+        <!-- <script src="./node_modules/axios/dist/browser/axios.cjs"></script> -->
         <script src="script/script.js"></script>
-        <script type="module" src="script/src.js"></script>
+        <script src="script/src.js"></script>
     </body>
 </html>

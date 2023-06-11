@@ -12,36 +12,21 @@ window.onscroll = function () {
 
 const play = function () {
     const video = document.querySelector("video");
-    const button = document.querySelector("button");
-    video.paused ? video.play() : video.pause();
-    video.controls = true;
-    button.style.display = "none";
+    const button = document.querySelector(".details__trailer button");
+    video.play();
+
+    if (!video.paused) {
+        button.style.display = "none";
+        video.controls = true;
+    }
 };
 
 var scrollAmount = 0;
-const slider = document.querySelector(".cast__card");
-var maxScrollLeft = slider.scrollWidth - slider.clientWidth;
-const next = function () {
-    if (scrollAmount < maxScrollLeft) {
-        slider.scrollTo({
-            top: 0,
-            left: (scrollAmount += 400),
-            behavior: "smooth",
-        });
-    }
-};
-const prev = function () {
-    slider.scrollTo({
-        top: 0,
-        left: (scrollAmount -= 400),
-        behavior: "smooth",
-    });
-    if (scrollAmount < 0) scrollAmount = 0;
-};
-
 const sliderRel = document.querySelector(".relevant");
+const maxScrollLeft = sliderRel.scrollWidth - sliderRel.clientWidth;
+
 const nextRel = function () {
-    if (scrollAmount < maxScrollLeft) {
+    if (scrollAmount < maxScrollLeft - (maxScrollLeft%400)) {
         sliderRel.scrollTo({
             top: 0,
             left: (scrollAmount += 400),

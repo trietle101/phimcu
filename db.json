@@ -1,0 +1,144 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Leanne Graham",
+            "password": "111",
+            "email": "Sincere@april.biz",
+            "role": "user"
+        },
+        {
+            "id": 2,
+            "name": "Leanne Grahams",
+            "password": "222",
+            "email": "Sinceres@april.biz",
+            "role": "user"
+        },
+        {
+            "id": 3,
+            "name": "Leannes Graham",
+            "password": "333",
+            "email": "Sinceress@april.biz",
+            "role": "user"
+        },
+        {
+            "name": "Minh Triet",
+            "password": "222",
+            "email": "abc30@gmail.com",
+            "id": 10,
+            "role": "user"
+        },
+        {
+            "name": "Lê Minh Triết",
+            "password": "678",
+            "email": "trietle101@gmail.com",
+            "id": 16,
+            "role": "admin"
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "name": "Breakfast at Tiffany's",
+            "poster": "breakfast/poster.jpg",
+            "description": "Holly Golightly is an eccentric New York City playgirl determined to marry a Brazilian millionaire. But when young writer Paul Varjak moves into her apartment building, her past threatens to get in their way.",
+            "cast": [
+                {
+                    "name": "Audrey Hepburn",
+                    "role": "Holly Golightly",
+                    "img": "breakfast/cast/1.jpg"
+                },
+                {
+                    "name": "George Peppard",
+                    "role": "Paul Varjak",
+                    "img": "breakfast/cast/2.jpg"
+                },
+                {
+                    "name": "Patricia Neal",
+                    "role": "2E Failenson",
+                    "img": "breakfast/cast/3.jpg"
+                },
+                {
+                    "name": "Buddy Ebsen",
+                    "role": "Doc Golightly",
+                    "img": "breakfast/cast/4.jpg"
+                },
+                {
+                    "name": "Martin Balsam",
+                    "role": "O.J. Berman",
+                    "img": "breakfast/cast/5.jpg"
+                },
+                {
+                    "name": "José Vilallonga",
+                    "role": "José Pereira",
+                    "img": "breakfast/cast/6.jpg"
+                },
+                {
+                    "name": "John McGiver",
+                    "role": "Tiffany's Salesman",
+                    "img": "breakfast/cast/7.jpg"
+                },
+                {
+                    "name": "Dorothy Whitney",
+                    "role": "Mag Wildwood",
+                    "img": "breakfast/cast/8.jpg"
+                },
+                {
+                    "name": "Stanley Adams",
+                    "role": "Rusty Trawler",
+                    "img": "breakfast/cast/9.jpg"
+                },
+                {
+                    "name": "Elvia Allman",
+                    "role": "Librarian",
+                    "img": "breakfast/cast/10.jpg"
+                },
+                {
+                    "name": "Holly Tran",
+                    "role": "Holly Gosweety",
+                    "img": "breakfast/cast/911.jpg"
+                },
+                {
+                    "name": "Beverly Powers",
+                    "role": "Nightclub Stripper",
+                    "img": "breakfast/cast/12.jpg"
+                },
+                {
+                    "name": "Claude Stroud",
+                    "role": "Sid Arbuck",
+                    "img": "breakfast/cast/13.jpg"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "A Quiet Place",
+            "poster": "A Quiet Place.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Arrested Development",
+            "poster": "Arrested Development.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Avatar - The Last Airbender",
+            "poster": "Avatar_ The Last Airbender.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Brooklyn Nine-Nine",
+            "poster": "Brooklyn Nine-Nine.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Despicable Me",
+            "poster": "Despicable Me.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Family Guy",
+            "poster": "Family Guy.jpg"
+        }
+    ]
+}
