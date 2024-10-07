@@ -1,4 +1,5 @@
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
+import Link from "next/link";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import Category from "@/components/Category";
 import {
@@ -29,20 +30,20 @@ export default async function Home() {
             their way.
           </p>
           <div className="w-fit flex justify-center items-center gap-5">
-            <a
-              href="#"
+            <Link
+              href="/watch/164"
               className="h-fit flex justify-between items-center gap-2 px-6 py-2 bg-white hover:bg-[#d8d8d8] transition-all duration-100 text-black rounded-md"
             >
               <PlayArrowIcon fontSize="large" />
               <p className="text-xl pr-3">Play</p>
-            </a>
-            <a
-              href="html/detail.html"
+            </Link>
+            <Link
+              href="/movie/164"
               className="h-fit w-fit flex justify-between items-center gap-2 hover:text-[#d8d8d8] transition-all duration-100"
             >
               <InfoOutlinedIcon fontSize="medium" />
               <p className="text-lg">More info</p>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
